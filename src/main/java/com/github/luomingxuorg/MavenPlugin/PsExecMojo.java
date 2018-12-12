@@ -14,11 +14,11 @@
  *  limitations under the License.
  *
  *  Author : Luoming Xu
- *  File Name : ExecMojo.java
+ *  File Name : PsExecMojo.java
  *  Url: https://github.com/LuomingXuOrg/MavenPlugin
  */
 
-package com.github.luomingxuorg.psMavenPlugin;
+package com.github.luomingxuorg.MavenPlugin;
 
 import org.apache.maven.plugin.AbstractMojo;
 import org.apache.maven.plugin.MojoExecutionException;
@@ -34,7 +34,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Mojo(name = "psExec")
-public class ExecMojo extends AbstractMojo
+public class PsExecMojo extends AbstractMojo
 {
     @Parameter(property = "charset", defaultValue = "UTF-8")
     private String charset;

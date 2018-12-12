@@ -5,18 +5,22 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.github.luomingxuorg</groupId>
-    <artifactId>ps-maven-plugin</artifactId>
+    <artifactId>luoming-maven-plugin</artifactId>
     <version>0.1</version>
     <packaging>maven-plugin</packaging>
-    <name>ps-maven-plugin</name>
-    <description>exec powershell script</description>
+    <name>luoming-maven-plugin</name>
+    <description>self use maven plugin</description>
 
-    <properties>
-        <maven.version>3.6.0</maven.version>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <autoReleaseAfterClose>true</autoReleaseAfterClose>
-    </properties>
+    <scm>
+        <url>git@github.com:LuomingXu/MavenPlugin.git</url>
+        <connection>scm:git:git@github.com:LuomingXu/MavenPlugin.git</connection>
+    </scm>
+
+    <parent>
+        <groupId>com.github.luomingxuorg</groupId>
+        <artifactId>project-parent</artifactId>
+        <version>0.1</version>
+    </parent>
 
     <dependencies>
         <dependency>
@@ -35,14 +39,4 @@
             <version>3.6.0</version>
         </dependency>
     </dependencies>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-plugin-plugin</artifactId>
-                <version>3.6.0</version>
-            </plugin>
-        </plugins>
-    </build>
 </project>
